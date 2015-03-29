@@ -25,17 +25,27 @@ namespace appPoo.Implementacoes
 
         public override string resolver()
         {
-            base.resolver();
-            //Δ = b² - 4ac
-            double b2 = base.Multiplicacao(base.incogB, base.incogB);
+            try
+            {
 
-            double menosQuatroAC = base.Multiplicacao(4, base.Multiplicacao(base.incogA, this.incogC));
 
-            double delta = base.Subtracao(b2, menosQuatroAC);
+                base.resolver();
+                //Δ = b² - 4ac
+                double b2 = base.Multiplicacao(base.incogB, base.incogB);
 
-            double[] raizes = aplicarBhaskara(delta);
+                double menosQuatroAC = base.Multiplicacao(4, base.Multiplicacao(base.incogA, this.incogC));
 
-            return "1º: " + raizes[0].ToString() + " 2º:" + raizes[1].ToString();
+                double delta = base.Subtracao(b2, menosQuatroAC);
+
+                double[] raizes = aplicarBhaskara(delta);
+
+                return "Delta: " + delta + "\n1ª raíz: " + raizes[0].ToString() + "\n2ª raíz:" + raizes[1].ToString();
+            }
+            catch (Exception e)
+            {
+
+                return e.Message;
+            }
         }
 
         public double[] aplicarBhaskara(double delta)
