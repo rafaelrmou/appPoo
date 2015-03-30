@@ -8,7 +8,7 @@ namespace appPoo.Implementacoes
 {
     public class FuncaoSegundoGrau : appPoo.Modelos.Funcao
     {
-        public double incogC { get; set; }
+        public double incogA2 { get; set; }
 
         public FuncaoSegundoGrau()
             : this(0, 0, 0, 0)
@@ -17,9 +17,9 @@ namespace appPoo.Implementacoes
 
         public FuncaoSegundoGrau(double a, double b, double c, double igualdade)
         {
-            base.incogA = a;
-            base.incogB = b;
-            this.incogC = c;
+            base.incogA = b;
+            base.incogB = c;
+            this.incogA2 = a;
             base.igualdade = igualdade;
         }
 
@@ -28,12 +28,14 @@ namespace appPoo.Implementacoes
             try
             {
 
-
-                base.resolver();
+                if (incogA2 == 0)
+                {
+                 return  base.resolver();
+                }
                 //Δ = b² - 4ac
-                double b2 = base.Multiplicacao(base.incogB, base.incogB);
+                double b2 = base.Multiplicacao(base.incogA, base.incogA);
 
-                double menosQuatroAC = base.Multiplicacao(4, base.Multiplicacao(base.incogA, this.incogC));
+                double menosQuatroAC = base.Multiplicacao(4, base.Multiplicacao(incogA2, this.incogA));
 
                 double delta = base.Subtracao(b2, menosQuatroAC);
 
@@ -59,14 +61,14 @@ namespace appPoo.Implementacoes
             {
                 bhaskara = new double[] {
                     base.Subtracao(0,
-                                    base.Divisao(base.incogB,
+                                    base.Divisao(base.incogA,
                                                             (base.Multiplicacao(2,
-                                                                                 base.incogA)))) };
+                                                                                 incogA2)))) };
             }
             else
             {
-                bhaskara[0] = ((-base.incogB) + Math.Sqrt(delta)) / (2 * base.incogA);
-                bhaskara[1] = ((-base.incogB) - Math.Sqrt(delta)) / (2 * base.incogA);
+                bhaskara[0] = ((-base.incogA) + Math.Sqrt(delta)) / (2 * incogA2);
+                bhaskara[1] = ((-base.incogA) - Math.Sqrt(delta)) / (2 * incogA2);
             }
 
             return bhaskara;

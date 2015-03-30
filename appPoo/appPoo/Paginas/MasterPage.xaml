@@ -7,12 +7,12 @@
       <TableView>
         <TableRoot>
           <TableSection>
-            <EntryCell Label="aX" x:Name="apX" ></EntryCell>
+            <EntryCell Label="aX" x:Name="apX"></EntryCell>
             <EntryCell Label="b" x:Name="bp" ></EntryCell>
             <EntryCell Label="=" x:Name="equalitep" ></EntryCell>
             <ViewCell>
-              <StackLayout Orientation="Horizontal" Spacing="25">
-                <Button Text="Calcular" Clicked="OnButtonClicked_eqp"></Button>
+              <StackLayout Orientation="Horizontal" Spacing="25" HorizontalOptions="EndAndExpand">
+                <Button Text="Calcular" Clicked="OnButtonClicked_eqp" x:Name="btnEQP" HorizontalOptions="FillAndExpand"></Button>
               </StackLayout>
             </ViewCell>
           </TableSection>

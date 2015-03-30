@@ -40,7 +40,20 @@ namespace appPoo.Modelos
 
         public virtual string resolver()
         {
-            return "";
+            try
+            {
+
+
+                //Primeira subtraimos o valor da incogB do valor da igualdade e depois fazemos a divisão entre o
+                //resultado dessa subtração e incogA
+                double resultado = Divisao(Subtracao(igualdade, incogB), incogA);
+
+                return resultado.ToString();
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
         }
     }
 }

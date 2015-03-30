@@ -13,6 +13,12 @@ namespace appPoo.Paginas
         public MasterPage()
         {
             InitializeComponent();
+            btnEQP.BackgroundColor = Color.Green;
+            btnEQP.BorderRadius = 0;
+            btnEQP.BorderWidth = 0;
+            btnEQP.FontSize = 20;
+            
+            
         }
 
         void OnButtonClicked_eqp(object sender, EventArgs e)
