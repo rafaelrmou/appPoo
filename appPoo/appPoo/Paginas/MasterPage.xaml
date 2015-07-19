@@ -3,10 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="appPoo.Paginas.MasterPage">
   <TabbedPage.Children>
-    <ContentPage Title="Equações de Primeiro Grau">
+    <ContentPage Title="Equações de Primeiro Grau" x:Name="contentEP">
       <TableView>
         <TableRoot>
           <TableSection>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" Spacing="25" HorizontalOptions="CenterAndExpand">
+              </StackLayout>
+            </ViewCell>
             <EntryCell Label="aX" x:Name="apX"></EntryCell>
             <EntryCell Label="b" x:Name="bp" ></EntryCell>
             <EntryCell Label="=" x:Name="equalitep" ></EntryCell>
@@ -23,6 +27,10 @@
       <TableView>
         <TableRoot>
           <TableSection>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" Spacing="25" HorizontalOptions="CenterAndExpand">
+              </StackLayout>
+            </ViewCell>
             <EntryCell Label="aX" x:Name="asX" ></EntryCell>
             <EntryCell Label="bY" x:Name="bsY" ></EntryCell>
             <EntryCell Label="c" x:Name="cs" ></EntryCell>

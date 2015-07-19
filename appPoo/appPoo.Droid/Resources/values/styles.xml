@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!-- Inherit from the light Material Theme -->
+  <style name="MyCustomTheme" parent="android:Theme.Holo.Light">
+    <!-- Override the app bar color -->
+    <item name="android:colorPrimary">@color/my_green</item>
+    <!-- Override the color of UI controls -->
+    <item name="android:colorAccent">@color/my_purple</item>
+    <item name="android:colorPressedHighlight">@color/my_green</item>
+    <item name="android:colorLongPressedHighlight">@color/my_green</item>
+    <item name="android:colorFocusedHighlight">@color/my_green</item>
+    <item name="android:colorActivatedHighlight">@color/my_green</item>
+    <item name="android:activatedBackgroundIndicator">@color/my_green</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+    <item name="android:icon">@android:color/transparent</item>
+  </style>
+</resources>

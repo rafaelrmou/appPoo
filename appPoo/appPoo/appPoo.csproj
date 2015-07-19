@@ -35,6 +35,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Helpers\MenuItem.cs" />
+    <Compile Include="Helpers\MenuListData.cs" />
+    <Compile Include="Helpers\MenuListView.cs" />
+    <Compile Include="Helpers\MenuPage.cs" />
+    <Compile Include="Helpers\NumberCell.cs" />
+    <Compile Include="Helpers\RootPage.cs" />
     <Compile Include="Implementacoes\FuncaoPrimeiroGrau.cs" />
     <Compile Include="Implementacoes\FuncaoSegundoGrau.cs" />
     <Compile Include="Interfaces\IFuncao.cs" />

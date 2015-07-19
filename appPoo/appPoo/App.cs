@@ -1,17 +1,25 @@
-﻿using System;
+﻿using appPoo.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Xamarin.Forms;
 
 namespace appPoo
 {
     public class App : Application
     {
+        static RootPage masterDetail;
+
+        public static  RootPage criarMenuELayout()
+        {
+            masterDetail = new RootPage();
+            return masterDetail;
+
+        }
         public App()
         {
-            MainPage = new appPoo.Paginas.MasterPage();
+            MainPage = criarMenuELayout();
         }
 
         protected override void OnStart()

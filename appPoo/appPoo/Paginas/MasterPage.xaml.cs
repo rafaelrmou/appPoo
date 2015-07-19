@@ -19,6 +19,8 @@ namespace appPoo.Paginas
             btnEQP.FontSize = 20;
             
             
+            
+            
         }
 
         void OnButtonClicked_eqp(object sender, EventArgs e)

@@ -1,0 +1,10 @@
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\bin\Debug\appPoo.dll
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\bin\Debug\appPoo.pdb
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\bin\Debug\Xamarin.Forms.Core.dll
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\bin\Debug\Xamarin.Forms.Xaml.dll
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\bin\Debug\Xamarin.Forms.Core.xml
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\bin\Debug\Xamarin.Forms.Xaml.xml
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\obj\Debug\appPoo.csprojResolveAssemblyReference.cache
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\obj\Debug\MasterPage.xaml.g.cs
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\obj\Debug\appPoo.dll
+Z:\XSA\Blog\Android\appPoo\appPoo\appPoo\obj\Debug\appPoo.pdb

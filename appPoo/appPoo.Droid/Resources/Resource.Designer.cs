@@ -41,6 +41,31 @@ namespace appPoo.Droid
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f030000
+			public const int my_blue = 2130903040;
+			
+			// aapt resource value: 0x7f030003
+			public const int my_gray = 2130903043;
+			
+			// aapt resource value: 0x7f030001
+			public const int my_green = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int my_purple = 2130903042;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -53,6 +78,22 @@ namespace appPoo.Droid
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int MyCustomTheme = 2130968576;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
